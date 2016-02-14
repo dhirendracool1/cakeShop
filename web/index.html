@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Cake Shop</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="javascript.js"></script>
+</head>
+ <body onload="init()">  
+        <div class="container">
+  <div class="navbar">
+	          <div class="navbar-inner">
+	            
+	              <ul class="nav">
+                          <li class="active"><a href="flavour.jsp"><b>Cakes by Flavour</b></a></li>
+                          <li><a href="theme.jsp"><b>Cakes by Theme</b></a></li>
+                          <li><a href="photo.jsp"><b>Photo Cakes</b></a></li>
+                          <li><a href="addone.jsp"><b>Add-Ons</b></a></li>
+                          <li><a href="userdetails.jsp"><b>Register/Login</b></a></li>
+                         
+	              </ul>
+                      
+                       
+                     <form name="autofillform" action="autocomplete" class="search" method="get">
+                            <table border="0" cellpadding="1" bgcolor="#FFF8DC"> 
+                                <tbody>
+                                   
+                                        <b>Search</b>
+                                        
+                                            <input type="text" class="search-query" placeholder="Enter Keyword here" id="complete-field" onkeyup="doCompletion()">
+                                        <button type="button" class="btn btn-info active">Go</button>
+                                    
+<tr>
+              <td id="auto-row" colspan="2">
+                <table id="complete-table" class="popupBox" >
+              <td>
+          <tr>
+                </table>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+      
+      
+  </div>
+
+     <div class="hero-unit">
+      <form class="span3" action="./FindCakes" method="post">
+    
+      <label for="state">What do you want to buy?</label>
+      <select class="form-control" name="queryCheckBox">
+                                                        <option value="1" selected>Choose</option>
+                                                        <option value="Cream">Cakes-Fresh Cream Cakes</option>
+                                                        <option value="Premium">Cakes-Premium Cakes</option>
+                                                        <option value="Cheese">Cakes-Cheese Cakes</option>
+                                                        <option value="Mousse">Cakes-Mousse Cakes</option>
+                                                        <option value="Eggless">Cakes-Eggless Cakes</option>
+                                                        <option value="TwoTier">Cakes-2 Tier Cakes</option>
+                                                        <option value="ThreeTier">Cakes-3 Tier Cakes</option>
+                                                        <option value="Cartoon">Cakes-Cartoon Cakes</option>
+                                                        <option value="Heart">Cakes-Heart Shaped Cakes</option>
+                                                        <option value="Special">Cakes-Special Cakes Flavours</option>
+                                                        <option value="Wedding">Cakes-Wedding Cakes</option>
+                                                        <option value="Birthday">Cakes-Birthday Cakes</option>
+                                                                                       
+                        </select>
+   
+    
+      <label for="pwd">Date of Delivery</label>
+      <input type="deliverydate" class="form-control" id="pwd" placeholder="DD/MM/YYYY">
+    
+      
+      <label for="state">Delivery city</label>
+      <select class="form-control" name="shipadd">
+                                                        <option value="1" selected>Select City</option>
+                                                        <option value="2">Chicago</option>
+                                                        <option value="3">Detroit</option>
+                                                        <option value="4">Michigan</option>
+                                                        <option value="5">Schaumburg</option>
+                        </select>
+          
+   
+    <button type="submit" class="btn btn-info active">Order Now!</button>
+  </form>
+ 
+     </div>
+      
+         <div class="span4">
+	        		<ul class="nav nav-list">
+    <li class="nav-header">What we are?</li>
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="aboutus.html">Location & Hours</a></li>
+    <li><a href="testimonial.html">Reviews & Testimonials</a></li>
+   
+    <li class="nav-header">What we Offer</li>
+    <li><a href="prod.jsp">Our Cakes</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="userdetails.jsp">Your Order</a></li>
+    <li><a href="offers.jsp">Offers</a></li>
+   
+</ul>
+	        	</div>
+     
+     
+            
+            
+                       
+  <div class="span8">
+      <section class="group7">
+        <h5>Celebration Offer !!</h5>
+        <p>Additional <strong>10% off</strong> on all New Order's above <strong>$10</strong>, to use register first and then use coupon Code "<strong>DIS10</strong>" in shopping cart.</p>
+        <h4> <b> Hurry up!</b></h4>
+        <a class="photo_hover3" href="#"><img src="images/disc10.jpg" width="215" height="137" alt=""></a> <a href="userdetails.jsp"><span class="button">Register to claim!</span></a> 
+      </section>
+    
+    
+    
+      <section class="group8">
+        <h5>Products</h5>
+        <p>At Cake Shop, we know that to ensure repeat sales you need to feature cakes with moist texture and superior flavor. That’s why Cake Shop offers a full line of cakes. From Ready-to-Sell, to the most indulgent Torte Cakes, we have what you need for a successful operation.</p>
+        <a class="photo_hover3" href="#"><img src="images/prod.jpg" width="215" height="137" alt=""></a> <a href="prod.jsp"><span class="button">View More</span></a> 
+      </section>
+    
+    
+      <section class="group9">
+        <h5>Gallery</h5>
+       <p>Each cake begins with our bride and their vision of "the perfect day." At Cake Shop we want you to have the Cake of Your Dreams. It is all about you and your style. Therefore, we customize any design, color, shape, and size to perfection. In the Cake Gallery all cakes have price, size. To find this information simply click on "View More".Please take a glance through our work to find the right style to match your occasion.</p>
+        
+        <a class="photo_hover3" href="#"><img src="images/gallery.png" width="215" height="137" alt=""></a> <a href="gallery.html"><span class="button">View More</span></a>
+      </section>
+    
+    
+      
+       </div>
+      
+    
+     <footer>
+	
+        <div class="footer-content">
+            <ul>
+            	<li><h4>Cake Shop</h4></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="aboutus.html">Contact Us</a></li>
+                <li><a href="aboutus.html">Delivery Policy</a></li>
+                <li><a href="aboutus.html">Terms & Conditions</a></li>
+                
+			</ul>
+            
+            <ul>
+            <li><h4>Shop</h4></li>
+            <li><a href="birthday.jsp">Birthday Cakes</a></li>
+            <li><a href="wedding.jsp">Wedding Cakes</a></li>
+        </ul>
+            
+            <ul>
+            	<li><h4>Customer Service </h4></li>
+                <li><a href="userdetails.jsp">About your Order</a></li>
+                 <li><a href="testimonial.html">Reviews/Complaints</a></li>
+                
+			</ul>
+            <ul>
+            	<li><h4>Connect with Us</h4></li>
+                <li>
+                <img src="images/fb.png" alt=""/>  </li>
+                <li><img src="images/twitter.jpg" alt=""/> </li>
+               
+			</ul>
+           
+        
+        </div>
+		
+        <div class="footer-bottom">
+            <p> <span>&copy; 2015 All Rights Reserved </span>&nbsp;&nbsp;|&nbsp;&nbsp; CSP 595 Cake Website by Team 17</p>
+        </div>
+		
+    </footer>
+    </div>
+
+     
+        </body>
+</html>

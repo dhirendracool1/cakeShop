@@ -1,0 +1,142 @@
+<html>
+  
+<head>
+<title>Cake Shop</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+ <body> 
+     <div class="container">
+  <div class="navbar">
+	         <div class="navbar-inner">
+	           
+	             <ul class="nav">
+                         <li class="active"><a href="admin.jsp"><b>Home</b></a></li>
+                         <li class=""><a href="existing.html"><b>Add Customer Order</b></a></li>
+                         <li class=""><a href="existing.html"><b>Delete Customer Order</b></a></li>
+                         <li class=""><a href="existing.html"><b>Update Customer Order</b></a></li>
+                          <li class=""><a href="logout.jsp"><b>Logout</b></a></li>
+                          </ul>
+                 </div>
+      
+      
+  </div>
+         
+         <div class="span4">
+	       		<ul class="nav nav-list">
+    
+    <li class="active"><a href="admin.jsp">Home</a></li>
+    <li><a href="existing.html">Add Customer Order</a></li>
+    <li><a href="existing.html">Delete Customer Order</a></li>
+    <li><a href="existing.html">Update Customer Order</a></li>
+    <li><a href="existing.html">Back</a></li>
+    <li><a href="logout.jsp">Logout</a></li>
+   
+</ul>
+	       	</div>
+         <div class="span8">
+      <section class="group6">
+         <form action="./UpdateOrd">
+  <fieldset>
+    <legend>Order Details:</legend>
+    <table>
+        <tr><td>
+                Order No:</td>
+            <td> <input type="number" name="orderid" >
+            </td>
+        </tr>           
+                    <tr>
+        <td><h4><input type="checkbox" name="queryCheckBox" value="cakename">Cake Name</h4></td>
+<td> <input type="text" name="cakename">                         
+</td>
+</tr>
+ <tr>
+     <td>             <h4><input type="checkbox" name="queryCheckBox" value="cakeunit">Cake Unit</h4></td>
+                    <td><select name="cakeunit">
+                         <option value="Half Kg"> Half Kg </option>
+
+                          <option value="One Kg"> 1 Kg </option>
+                          <option value="One point 5 Kg"> 1.5 Kg </option>
+                          <option value="Two Kg"> 2 Kg </option>
+                        </td>
+                    </tr>
+                   <tr>
+              <td>             <h4><input type="checkbox" name="queryCheckBox" value="cakeprice">Cake Price</h4></td>
+            <td> <input type="text" name="cakeprice" >
+            </td></tr>
+              <tr>
+    </table>
+  </fieldset>
+             <fieldset>
+    <legend>Payment Details:</legend>
+    <table>
+        <tr>
+        <td><h4><input type="checkbox" name="queryCheckBox" value="cardname">Card Name</h4></td>
+<td> <input type="text" name="cardname">                         
+</td>
+</tr>
+<tr>
+        <td><h4><input type="checkbox" name="queryCheckBox" value="cardtype">Card Type</h4></td>
+<td> <input type="text" name="cardtype">                         
+</td>
+</tr>
+<tr>
+        <td><h4><input type="checkbox" name="queryCheckBox" value="cardno">Card Number</h4></td>
+<td> <input type="text" name="cardno">                         
+</td>
+</tr>
+  <tr><td><input type="submit" value="Update" class="btn btn-info1 active"></td></tr>
+    </table>
+  </fieldset>
+</form>
+
+    </section>
+    </div>
+         <footer>
+	
+        <div class="footer-content">
+            <ul>
+            	<li><h4>Cake Shop</h4></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="aboutus.html">Contact Us</a></li>
+                <li><a href="aboutus.html">Delivery Policy</a></li>
+                <li><a href="aboutus.html">Terms & Conditions</a></li>
+                
+			</ul>
+            
+           <ul>
+            <li><h4>Shop</h4></li>
+            <li><a href="birthday.jsp">Birthday Cakes</a></li>
+            <li><a href="wedding.jsp">Wedding Cakes</a></li>
+        </ul>
+            
+            <ul>
+            	<li><h4>Customer Service </h4></li>
+                <li><a href="userdetails.jsp">About your Order</a></li>
+                 <li><a href="testimonial.html">Reviews/Complaints</a></li>
+                
+			</ul>
+            <ul>
+            	<li><h4>Connect with Us</h4></li>
+                <li>
+                <img src="images/fb.png" alt=""/>  </li>
+                <li><img src="images/twitter.jpg" alt=""/> </li>
+               
+			</ul>
+           
+        
+        </div>
+		
+        <div class="footer-bottom">
+            <p> <span>&copy; 2015 All Rights Reserved </span>&nbsp;&nbsp;|&nbsp;&nbsp; CSP 595 Cake Website by Team 17</p>
+        </div>
+		
+    </footer>
+    </div>
+ 
+     
+        </body>
+</html>
